@@ -1,6 +1,10 @@
 import 'classes' from './Checkout.module.css';
 
 const Checkout = props => {
+  const confirmHandler = (event) {
+    event.preventDefault();
+  }
+
   return <form>
     <div className='{classes.control}'>
       <label htmlFor='name'>Your Name</label>
